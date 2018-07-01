@@ -31,7 +31,6 @@ app.get("/invoice/:id" , function(req, res, next){
 app.get("/html/invoice/:id", function(req, res, next) {
   invoice_controller(req,res)
 });
-
 http.listen(port);
 
 logger.info(`${pjson.name} Server Started on http://localhost:${port} >> `);
